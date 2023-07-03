@@ -1,6 +1,5 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const router = require("./routes/bookroutes");
 const app = express();
 
 app.use(express.json());
@@ -15,5 +14,8 @@ mongoose.connect("mongodb+srv://gehan:gehan@store.svxomz2.mongodb.net/?retryWrit
 })
 .catch((err) => console.log(err));
 
+const book = require("./routes/bookroutes");
+app.use("/books",book);
 
-app.use("/books",router);
+const user = require("./routes/userroutes");
+app.use("/users",user);
