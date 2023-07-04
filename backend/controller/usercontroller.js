@@ -68,6 +68,20 @@ const deleteUser= async (req,res,next)=>{
     return res.status(200).json({message:"Successfully Deleted User "});
 }
 
+
+
+/*
+const userLogin = async(req,res,next)=>{
+    const password = req.params.password;
+    let user = await User.find({email})
+    try{
+        if()
+    }
+
+}
+*/
+
+
 exports.getUsers = getUsers;
 exports.addUsers = addUsers;
 exports.updateUser = updateUser;
