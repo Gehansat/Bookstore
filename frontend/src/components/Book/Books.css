@@ -1,0 +1,27 @@
+.fbtn{
+    padding: auto;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.tbtn{
+    padding: auto;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#cards{
+    padding: auto;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+}
